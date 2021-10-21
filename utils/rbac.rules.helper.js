@@ -31,6 +31,17 @@ const rules = {
             "dashboard-page:visit"
         ]
     },
+    AISUAdmin: {
+        static: [
+            "admin-page:visit",
+            "admin-page:list",
+            "admin-page:create",
+            "admin-page:edit",
+            "admin-page:delete",
+            "dashboard-page:visit"
+        ]
+    },
+    
     SubAdmin: {
         static: [
             "admin-page:list",
@@ -40,45 +51,6 @@ const rules = {
             "admin-page:visit",
             "home-page:visit",
             "dashboard-page:visit"
-        ]
-    },
-    CFO: {
-        static: [
-            "admin-page:visit",
-            "user-page:list",
-            "home-page:visit"
-        ]
-    },
-    FC: {
-        static: ["user-page:list"]
-    },
-    Corporate_Coordinator: {
-        static: [
-            "user-page:list",
-            "user-page:create",
-            "user-page:edit",
-            "user-page:visit"
-        ]},
-    PlantHRHead: {
-        static: [
-            "user-page:list",
-            "user-page:create",
-            "user-page:edit",
-            "user-page:visit"
-        ],
-        dynamic: {
-            "user-page:delete": ({ userId, invoiceOwnerId }) => {
-                if (!userId || !invoiceOwnerId) return false;
-                return userId === invoiceOwnerId;
-            }
-        }
-    },
-    companyHRHead: {
-        static: [
-            "user-page:list",
-            "user-page:create",
-            "user-page:edit",
-            "user-page:visit"
         ]
     }
 };

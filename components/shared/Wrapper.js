@@ -26,6 +26,7 @@ class Wrapper extends Component {
         const permissions = rules[role];
         if (!permissions) {
             // role is not present in the rules
+            console.log("permissions","role is not present in the rules")
             return false;
         }
 
