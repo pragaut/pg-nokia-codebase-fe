@@ -39,8 +39,8 @@ export const constants = {
         AUDIT: {
             IMAGE_CHANGE: 'audit/imageUpload',
         },
-        TMC: {
-            IMAGE_CHANGE: 'tmc/imageUpload',
+        NOKIA: {
+            IMAGE_CHANGE: 'nokia/imageUpload',
         },
         SHOPPING: {
             PRODUCTS: 'shopping/product',

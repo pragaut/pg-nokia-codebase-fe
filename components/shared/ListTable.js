@@ -9,7 +9,7 @@ import A from './A';
 import Pagination from './Pagination';
 
 import Input from './InputBox';
-import * as WorkingType from '../../../../front-end/tmc/action-types/working.action.types';
+import * as WorkingType from '../../../../front-end/nokia/action-types/working.action.types';
 import { save, deleteItems, shouldStoreDataInStateByKey } from '../../utils/editFormHelper';
 import PopUp from './PopUp';
 import { constants } from '../../utils/constants';
