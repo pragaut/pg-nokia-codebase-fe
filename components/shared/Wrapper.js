@@ -4,7 +4,7 @@ import { bindActionCreators } from 'redux';
 import { Dialog } from './Dialog';
 import PopUp from './PopUp';
 import Loader from './loader';
-import * as commonTypes from '../../action-types/common.action.types';
+import * as commonTypes from '../../action-types/comman/common.action.types';
 import * as sessionHelper from '../../utils/session.helper';
 import rules from "../../utils/rbac.rules.helper"; 
 import * as _ from "lodash";

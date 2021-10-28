@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import  * as commonTypes from '../../action-types/common.action.types';
+import  * as commonTypes from '../../action-types/comman/common.action.types'; 
 import style from '../../theme/app.scss';
 
 const OverlayWrapper = styled.div`

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Row, Column, Hr } from '../Grid';
 import styled from 'styled-components';
-import Gap from '../Gap';
+import Gap from '../comman/Gap';
 import Link from 'next/link';
 import FullWidthDiv from '../fullWidthDiv';
 import Wrapper from "./Wrapper";

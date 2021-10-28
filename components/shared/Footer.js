@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import Gap from '../Gap';
+import Gap from '../comman/Gap';
 import Link from 'next/link';
 import Wrapper from "../shared/Wrapper";
 import { connect } from 'react-redux';
-import * as CommonStyle from '../commonStyle'
+import * as CommonStyle from '../comman/commonStyle'
 
 const FooterWrapper = styled.div`
     width: 100%;

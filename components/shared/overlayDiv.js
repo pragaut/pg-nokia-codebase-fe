@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import Gap from '../Gap';
+import Gap from '../comman/Gap';
 import config from '../../config'; 
 
 const Close = styled.div`

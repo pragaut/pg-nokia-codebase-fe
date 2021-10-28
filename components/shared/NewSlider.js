@@ -5,7 +5,7 @@ import Head from 'next/head'
 import config from '../../config';
 // import LazyLoad from 'react-lazyload';
 import style from '../../theme/app.scss';
-import Gap from '../Gap'
+import Gap from '../comman/Gap'
 
 
 const backgrounds = ['#ffe1ff', '#0000ff', '#4d5b23', '#f6ac94', '#5fe164', '#7474c1', '#ff8080', '#9283is', '#18283u', '#9i87yt']

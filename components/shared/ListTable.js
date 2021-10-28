@@ -6,10 +6,8 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import style from '../../theme/app.scss';
 import A from './A';
-import Pagination from './Pagination';
-
-import Input from './InputBox';
-import * as WorkingType from '../../../../front-end/nokia/action-types/working.action.types';
+import Pagination from './Pagination'; 
+import * as WorkingType from '../../../../front-end/nokia/action-types/comman/working.action.types';
 import { save, deleteItems, shouldStoreDataInStateByKey } from '../../utils/editFormHelper';
 import PopUp from './PopUp';
 import { constants } from '../../utils/constants';

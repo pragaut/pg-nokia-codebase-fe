@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import styled from 'styled-components';
 import PopUp from './PopUp';
 import { Button } from '../formStyle';
-import Gap from '../Gap';
+import Gap from '../comman/Gap';
 import config from '../../config';
 
 const Wapper = styled.div`
