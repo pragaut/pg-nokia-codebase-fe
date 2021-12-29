@@ -63,6 +63,17 @@ const rules = {
             "home-page:visit",
             "dashboard-page:visit"
         ]
+    },
+    PraGautAdmin: {
+        static: [
+            "user-page:list",
+            "user-page:create",
+            "user-page:edit",
+            "user-page:delete",
+            "user-page:visit",
+            "home-page:visit",
+            "dashboard-page:visit"
+        ]
     }
 };
 
