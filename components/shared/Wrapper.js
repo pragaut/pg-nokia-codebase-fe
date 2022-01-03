@@ -6,7 +6,7 @@ import PopUp from './PopUp';
 import Loader from './loader';
 import * as commonTypes from '../../action-types/comman/common.action.types';
 import * as sessionHelper from '../../utils/session.helper';
-import rules from "../../utils/rbac.rules.helper"; 
+import rules from "../../utils/rbac.rules.helper";
 import * as _ from "lodash";
 
 class Wrapper extends Component {
@@ -26,7 +26,7 @@ class Wrapper extends Component {
         const permissions = rules[role];
         if (!permissions) {
             // role is not present in the rules
-            console.log("permissions","role is not present in the rules")
+            console.log("permissions", "role is not present in the rules")
             return false;
         }
 
@@ -186,6 +186,15 @@ class Wrapper extends Component {
         });
         const map = new Map(kvArray);
         return Array.from(map.values());
+    }
+
+    replaceJSX = (str, find, replace) => {
+        let parts = str.split(find);
+        for (let i = 0, result = []; i < parts.length; i++) {
+            result.push(parts[i]);
+            result.push(replace);
+        }
+        return result;
     }
 
 }
