@@ -175,6 +175,51 @@ export const validateInputsWithDisplayName = (baseObject, configs) => {
 };
 
 
+export const validateInputsWithDisplayName_New = (baseObject, configs) => {
+
+    const errors = [];
+
+    configs.forEach(config => {
+        const value = baseObject[config.name];
+
+        if (value !== 0 && !value && config.required === true) {
+            // problem problem
+            errors.push(`Please enter ${config.displayname} and try again.`);
+        }
+
+        switch (config.type) {
+            case 'string':
+                // anything is fine, so let's assume it is correct;
+                break;
+            case 'number':
+                if (!utils.validateNumber(value)) {
+                    errors.push(`The field ${config.displayname} is supposed to be a number. We received ${value}. Please enter this field and try again.`);
+                }
+                break;
+            case 'date':
+                if (!utils.validateDate(value)) {
+                    errors.push(`The field ${config.displayname} is supposed to be a date. We received ${value}. Please enter this field and try again.`);
+                }
+                break;
+            case 'email':
+                if (!utils.validateEmailFormat(value)) {
+                    errors.push(`The field ${config.displayname} is supposed to be a email. We received ${value}. Please enter this field and try again.`);
+
+                }
+                break;
+        }
+
+    });
+
+    if (errors.length > 0) {
+        return '' + errors.join('\n');
+    }
+
+    return undefined;
+
+};
+
+
 export const shouldStoreDataInStateByKey = (nextPropsData, previousPropsData, key) => {
     if (nextPropsData && Array.isArray(nextPropsData) && nextPropsData.length > 0) {
         // ok, we got the data
